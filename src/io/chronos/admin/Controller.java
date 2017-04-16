@@ -7,12 +7,9 @@ import javafx.event.Event;
 import javafx.scene.control.*;
 import javafx.util.Callback;
 
-import javax.print.DocFlavor;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import static io.chronos.admin.Controller.alertBadInput;
 
 public class Controller {
     public TextField connect_host;
