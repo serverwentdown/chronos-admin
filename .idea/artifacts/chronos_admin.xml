@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="chronos-admin">
+    <output-path>$PROJECT_DIR$/out/artifacts/chronos-admin</output-path>
+    <root id="archive" name="chronos-admin.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="chronos-admin" />
+      <element id="library" level="project" name="mysql-connector-java-5.1.41-bin" />
+    </root>
+  </artifact>
+</component>

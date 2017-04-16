@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: io.chronos.admin mysql-connector-java-5.1.41-bin.jar
+Main-Class: io.chronos.admin.Main
+
