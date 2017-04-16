@@ -56,6 +56,13 @@ public class Controller {
     }
 
     public void connect(ActionEvent actionEvent) {
+        if (c != null) {
+            try {
+                c.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
         try {
             String url = "jdbc:mysql://" + connect_host.getText() + ":" + connect_port.getText() + "/" + connect_database.getText();
             c = DriverManager.getConnection(url, connect_user.getText(), connect_pass.getText());
