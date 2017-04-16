@@ -91,25 +91,42 @@
                         </AnchorPane>
                     </content>
                 </Tab>
-                <Tab text="modify user">
+                <Tab text="add user">
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                             <children>
                                 <ToolBar layoutX="17.0" layoutY="3.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                     <items>
-                                        <TextField fx:id="modify_user_school" prefHeight="27.0" prefWidth="83.0" promptText="school id" />
-                                        <TextField fx:id="modify_user_id" layoutX="10.0" layoutY="11.0" prefHeight="27.0" prefWidth="74.0" promptText="user id" />
-                                        <Button fx:id="modify_user_load" mnemonicParsing="false" onAction="#modifyUserLoad" text="load" />
-                                        <TextField fx:id="modify_user_name" layoutX="10.0" layoutY="11.0" prefHeight="27.0" prefWidth="132.0" promptText="name" />
-                                        <TextField fx:id="modify_user_email" layoutX="100.0" layoutY="11.0" prefHeight="27.0" prefWidth="112.0" promptText="email" />
-                                        <TextField fx:id="modify_user_role" prefHeight="27.0" prefWidth="65.0" promptText="role" />
-                                        <Button fx:id="modify_user_go" mnemonicParsing="false" onAction="#modifyUser" text="go" />
+                                        <TextField fx:id="add_user_school" prefHeight="27.0" prefWidth="83.0" promptText="school id" />
+                                        <TextField fx:id="add_user_name" layoutX="10.0" layoutY="11.0" prefHeight="27.0" prefWidth="132.0" promptText="name" />
+                                        <TextField fx:id="add_user_email" layoutX="100.0" layoutY="11.0" prefHeight="27.0" prefWidth="112.0" promptText="email" />
+                                        <TextField fx:id="add_user_role" prefHeight="27.0" prefWidth="65.0" promptText="role" />
+                                        <Button fx:id="add_user_go" mnemonicParsing="false" onAction="#addUser" text="go" />
                                     </items>
                                 </ToolBar>
                             </children>
                         </AnchorPane>
                     </content>
                 </Tab>
+            <Tab text="modify user">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ToolBar layoutX="17.0" layoutY="3.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <TextField fx:id="modify_user_school" prefHeight="27.0" prefWidth="83.0" promptText="school id" />
+                              <TextField fx:id="modify_user_id" layoutX="10.0" layoutY="11.0" prefHeight="27.0" prefWidth="74.0" promptText="user id" />
+                              <Button fx:id="modify_user_load" mnemonicParsing="false" onAction="#modifyUserLoad" text="load" />
+                              <TextField fx:id="modify_user_name" layoutX="10.0" layoutY="11.0" prefHeight="27.0" prefWidth="132.0" promptText="name" />
+                              <TextField fx:id="modify_user_email" layoutX="100.0" layoutY="11.0" prefHeight="27.0" prefWidth="112.0" promptText="email" />
+                              <TextField fx:id="modify_user_role" prefHeight="27.0" prefWidth="65.0" promptText="role" />
+                              <Button fx:id="modify_user_go" mnemonicParsing="false" onAction="#modifyUser" text="go" />
+                           </items>
+                        </ToolBar>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
             </tabs>
         </TabPane>
     </children>

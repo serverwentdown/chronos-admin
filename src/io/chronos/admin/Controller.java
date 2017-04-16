@@ -39,6 +39,11 @@ public class Controller {
     public TextField modify_user_role;
     public Button modify_user_go;
     public TextField connect_database;
+    public TextField add_user_school;
+    public TextField add_user_name;
+    public TextField add_user_role;
+    public TextField add_user_email;
+    public Button add_user_go;
 
     private Connection c;
 
@@ -137,6 +142,24 @@ public class Controller {
             ps.execute();
 
             alertUpdateDone();
+        } catch (NumberFormatException e) {
+            alertBadInput();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            alertBadInput();
+        }
+    }
+
+    public void addUser(ActionEvent actionEvent) {
+        try {
+            PreparedStatement ps = c.prepareStatement("INSERT INTO user (name, email, role, school) VALUES (?, ?, ?, ?)");
+            ps.setString(1, add_user_name.getText());
+            ps.setString(2, add_user_email.getText());
+            ps.setString(3, add_user_role.getText());
+            ps.setInt(4, Integer.parseInt(add_user_school.getText()));
+            ps.execute();
+
+            alertInsertDone();
         } catch (NumberFormatException e) {
             alertBadInput();
         } catch (SQLException e) {
